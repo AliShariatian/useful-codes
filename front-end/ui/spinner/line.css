@@ -1,0 +1,74 @@
+:root {
+  --base-delay: 0.125s;
+}
+
+.line-spinner {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.line-spinner div {
+  transform-origin: 30px 15px;
+  animation: line-spinner 1s linear infinite;
+}
+
+.line-spinner div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 6px;
+  border-radius: 99px;
+  background: #fff;
+}
+
+.line-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: calc(var(--base-delay) * 0);
+}
+
+.line-spinner div:nth-child(2) {
+  transform: rotate(45deg);
+  animation-delay: calc(var(--base-delay) * 1);
+}
+
+.line-spinner div:nth-child(3) {
+  transform: rotate(90deg);
+  animation-delay: calc(var(--base-delay) * 2);
+}
+
+.line-spinner div:nth-child(4) {
+  transform: rotate(135deg);
+  animation-delay: calc(var(--base-delay) * 3);
+}
+
+.line-spinner div:nth-child(5) {
+  transform: rotate(180deg);
+  animation-delay: calc(var(--base-delay) * 4);
+}
+
+.line-spinner div:nth-child(6) {
+  transform: rotate(225deg);
+  animation-delay: calc(var(--base-delay) * 5);
+}
+
+.line-spinner div:nth-child(7) {
+  transform: rotate(270deg);
+  animation-delay: calc(var(--base-delay) * 6);
+}
+
+.line-spinner div:nth-child(8) {
+  transform: rotate(315deg);
+  animation-delay: calc(var(--base-delay) * 7);
+}
+
+@keyframes line-spinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
