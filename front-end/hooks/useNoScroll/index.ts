@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useOverflowScreen = (): void => {
+const useNoScroll = (): void => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
@@ -10,4 +10,4 @@ const useOverflowScreen = (): void => {
   }, []);
 };
 
-export default useOverflowScreen;
+export default useNoScroll;

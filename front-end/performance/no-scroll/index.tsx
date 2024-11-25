@@ -1,10 +1,10 @@
 "use client";
 
 import { FC } from "react";
-import { useOverflowScreen } from "@/hooks";
+import { useNoScroll } from "@/hooks";
 
 export const NoScroll: FC = (): null => {
-  useOverflowScreen();
+  useNoScroll();
 
   return null;
 };
