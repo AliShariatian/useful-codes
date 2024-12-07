@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "next dev",
+    "scan": "npx react-scan@latest localhost:3000"
+  }
+}
